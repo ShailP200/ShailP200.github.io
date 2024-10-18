@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shail's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4cbdff63f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span class="s_logo">S</span>hail</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi,</p>
+                <h1>I'm <span>Shail</span> Patel</h1>
+                <p>Aspiring Software Developer & Data Engineer</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Motivated computer science student with a strong academic background, ready to apply technical skills in a professional setting through an internship. Aims to contribute meaningful solutions and innovative ideas in a team-based environment. Offers a blend of analytical thinking, problem-solving abilities, and a collaborative spirit, aiming to impact projects and organizational goals positively.</p>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('coursework')">Coursework</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Language</span><br>C++, C, SQL, HTML, Python, F#, Java, CSS</li>
+                            <li><span>Technologies</span><br>Windows, Linux, MySQL</li>
+                            <li><span>Soft Skills</span><br>Customer service, Customer Relations, Problem Solving, Leadership</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education"> 
+                        <ul>
+                            <li><span>University</span><br>University of Illinois Chicago (UIC)</li>
+                            <li><span>Degree</span><br>Bachelor of Computer Science</li>
+                            <li><span>Expected Graduation</span><br>May 2026</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="coursework">
+                        <ul>
+                            <li><span>Coursework</span><br>Data Structures, Machine Organization, Software Design, Computer Design, Languages and Automata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------My Portfolio------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="portfolio-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>My Experince</h2>
+                    <p>Hey and aother discrition</p>
+                    <a href="Experince.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-folder"></i>
+                    <h2>Projects</h2>
+                    <p>Hey and aother discrition</p>
+                    <a href="#projects">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Lets see</h2>
+                    <p>Hey and aother discrition</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+      <!-- -------Projects------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="proj">
+                    <img src="images/proj_1.png">
+                    <div class="layer">
+                        <h3>Driving School Management System</h3>
+                        <p> •   Spearheaded the development of a digital Driving School Management System for an actual driving school being part of the College of Polytechnic, transforming traditional paperwork processes into an efficient online platform. <br>
+                            •	Engineered a comprehensive full-stack solution utilizing SQL for database management, Python for backend logic, and CSS, HTML, and JavaScript for a dynamic and responsive user interface.<br>
+                            •	Implemented robust features enabling user profile creation, schedule visualization, and financial transactions for class payments, significantly streamlining administrative operations and enhancing user experience.  
+                        </p>
+                        <a href="https://github.com/ShailP200/Driving-School-Management-System.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="images/proj_2.png">
+                    <div class="layer">
+                        <h3>CTA Database App </h3>
+                        <p>
+                            •	Designed and implemented a console-based Python application for querying the Chicago Transit Authority's updated daily ridership database, enhancing data accessibility and user interaction. <br>
+                            •	Utilized advanced SQL queries to retrieve, compute, and analyze ridership data across 5 database tables, showcasing proficiency in database management and data manipulation.<br>
+                            •	Integrated Python's matplotlib library to plot ridership trends and station information, providing insightful visualizations that support data-driven decision-making.<br>
+                            •	Developed a user-friendly command interface to navigate diverse data queries, including station searches, ridership by time, and geographical station plotting, demonstrating attention to user experience and software usability.  
+
+                        </p>
+                        <a href="https://github.com/ShailP200/CTA-Database-App.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="images/proj_1.png">
+                    <div class="layer">
+                        <h3>IMDB Search Engine</h3>
+                        <p>
+                            •	Developed a C++ console application 
+                        </p>
+                        <a href="https://github.com/ShailP200/IMDB-Search-Engine.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="project.html" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------Contact------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i></i>shailpatel0907@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(111) 111-1111</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shailpatel0907"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ShailP200"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Shail Patel</p>
+        </div>
+     </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+
+        var currentTab = event.currentTarget;
+
+        if(currentTab.classList.contains("active-link")){
+            currentTab.classList.remove("active-link");
+            document.getElementById(tabname).classList.remove("active-tab");
+            return;
+        }
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2ZJ-npqna0jLg4V-_8h23EIcO0E3kGVtDL9bpcLZX-SmLrv_jXJ4PHH1mSwUsBkxA9A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+</body>
+</html>

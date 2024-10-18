@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4cbdff63f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header1">
+        <div class="container1">
+            <nav>
+                <a href="#" class="logo1"><span class="s_logo1">S</span>hail</a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="Work Experience">
+                <h1 class="sub-title1">Work Experience</h1>
+            </div>
+            <div class="experience-list">
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Shail Patel</p>
+        </div>
+    </div>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+
+</body>
+</html>
