@@ -1,4 +1,4 @@
-# Shail Patel's Project Portfolio 
+# Shail Patel's Portfolio 
 
 
 Welcome to the GitHub repository of my portfolio! This repository contains the core files for my personal website, showcasing my web development projects, professional experience, and a downloadable PDF of my resume. The website is built using HTML, JavaScript, and CSS.
