@@ -497,3 +497,40 @@ nav .fa-solid{
     color: #fff;
     margin-top: 35px;
 }
+
+/*----------------Experience---------------*/
+
+.experience-list {
+    margin: 50px 0;
+}
+.experience-item {
+    margin-bottom: 20px;
+    background: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.experience-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience-header:hover {
+    background: #ff004f;
+}
+.experience-content {
+    display: none;
+    padding: 20px;
+    background: #1b1b1b;
+}
+.experience-content ul {
+    list-style: disc;
+    padding-left: 20px; 
+}
+.experience-content ul li {
+    margin-bottom: 10px;
+}
+.experience-header i {
+    transition: transform 0.3s;
+}
