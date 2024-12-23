@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Experience</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4cbdff63f3.js" crossorigin="anonymous"></script>
 </head>
@@ -22,26 +22,92 @@
                 <h1 class="sub-title1">Work Experience</h1>
             </div>
             <div class="experience-list">
-                
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience('exp1')">
+                        <h2>Building Manager – UIC Campus Recreation</h2>
+                        <p>April 2024 – Present</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="experience-content" id="exp1">
+                        <ul>
+                            <li>Achieved rapid career progression, advancing from Member Service Attendant to Manager within 6 months, demonstrating strong leadership and operational acumen.</li>
+                            <li>Supervise and ensure adherence to schedules for all building personnel, overseeing their duties and performance.</li>
+                            <li>Optimize building operations to enhance efficiency and tenant satisfaction.</li>
+                            <li>Manage emergency situations with proficiency in CPR and AED and prepare detailed incident reports as necessary.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience('exp2')">
+                        <h2>Attendant Supervisor (Member Service) – UIC Campus Recreation</h2>
+                        <p>July 2023 – April 2024</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="experience-content" id="exp2">
+                        <ul>
+                            <li>Train newly hired employee and introduce him/her with all the information they need to get started.</li>
+                            <li>Work closely with member service attendants and help them with their questions regarding the desk.</li>
+                            <li>Work with the Member Service Director to upload and file new memberships.</li>
+                            <li>Contact members through call or email if there is any issue with their membership.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience('exp3')">
+                        <h2>Member Service Attendant – UIC Campus Recreation</h2>
+                        <p>March 2023 – July 2023</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="experience-content" id="exp3">
+                        <ul>
+                            <li>Sell, manage, and explain to customers regarding membership.</li>
+                            <li>Help customers on call or in person with general questions about the building.</li>
+                            <li>Check-in patron for the fitness and swimming classes going on in the building.</li>
+                            <li>Check member's access and affiliation and give them access to the building.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header" onclick="toggleExperience('exp4')">
+                        <h2>Internship Student - Sumago Infotech Pvt. Ltd.</h2>
+                        <p>May 2020 – July 2020</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="experience-content" id="exp4">
+                        <ul>
+                            <li>Developed and deployed a full-stack web application using HTML, CSS, JavaScript, and PHP, tailored to meet client requirements through the waterfall development model.</li>
+                            <li>Collaborated with clients to gather and analyze requirements, selecting appropriate development methodologies for project execution.</li>
+                            <li>Debugged and enhanced existing projects to align with evolving client needs, ensuring seamless functionality and improved performance.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="copyright">
             <p>Copyright © Shail Patel</p>
         </div>
     </div>
+
     <script>
+        function toggleExperience(id) {
+            var content = document.getElementById(id);
+            var icon = content.previousElementSibling.querySelector('i');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                content.style.display = "block";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
 
         var sidemenu = document.getElementById("sidemenu");
-    
         function openmenu(){
             sidemenu.style.right = "0";
         }
-    
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
-    
     </script>
-
-</body>
-</html>
